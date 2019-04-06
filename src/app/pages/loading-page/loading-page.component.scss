@@ -1,0 +1,33 @@
+
+
+.main-content{
+  height: 100%;
+  width: auto;
+  background-image: linear-gradient(to right top, #051210, #123d36, #116d5e, #08a188, #00d8b1);}
+.logo-container{
+  padding-top: 20rem;
+}
+
+::ng-deep .img-log{
+ ion-img {img{
+    height: 10rem !important;
+    width: auto !important;
+  }
+ }
+}
+
+
+.loading-text{
+  font-size: 20px;
+  color: white;
+}
+
+.dots{
+  padding-top: 43px;
+}
+
+
+ion-spinner.dots.spinner-dots.hydrated{
+  color: white;
+}
+
