@@ -17,14 +17,20 @@ export class LoadingPageComponent implements OnInit {
 
   ngOnInit() {
 
-    this.router.navigate(['tabs'])
-        .then(() => {
-          console.log('pages');
-        })
-        .catch((err) => {
-          console.log(err);
-        });
+      this.onFinish();
 
+
+
+  }
+
+  onFinish() {
+      this.router.navigate(['tabs'])
+          .then(() => {
+              console.log('pages');
+          })
+          .catch((err) => {
+              console.log(err);
+          });
   }
 
 }
