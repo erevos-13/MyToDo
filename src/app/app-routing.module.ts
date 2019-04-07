@@ -5,6 +5,7 @@ import {TabsPage} from './tabs/tabs.page';
 const routes: Routes = [
   { path: '', loadChildren: './pages/loading-page/loading-page.module#LoadingPageModule' },
   { path: 'tabs', loadChildren: './tabs/tabs.module#TabsPageModule' },
+  { path: 'register', loadChildren: './pages/register/register.module#RegisterPageModule' },
 
 
 

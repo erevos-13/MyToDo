@@ -16,6 +16,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateLoader, TranslateModule, TranslatePipe} from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import {TabsPage} from './tabs/tabs.page';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -32,6 +33,8 @@ export function createTranslateLoader(http: HttpClient) {
         AngularFireModule.initializeApp(environment.firebase),
         AngularFireAuthModule,
         HttpClientModule,
+        FormsModule,
+        ReactiveFormsModule,
         AngularFireDatabaseModule,
         TranslateModule.forRoot({  loader: {
                 provide: TranslateLoader,

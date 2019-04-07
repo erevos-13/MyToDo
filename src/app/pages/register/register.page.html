@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title text-center>{{ 'REGISTER' | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="main-content">
+  <div class="form-container align-items-center">
+    <form class="row " [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="form-group col-12">
+        <ion-label >Email address</ion-label>
+        <ion-input type="email" class="form-control" formControlName="email"  placeholder="Enter email"></ion-input>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group col-12">
+        <ion-label>Password</ion-label>
+        <ion-input type="password" class="form-control" formControlName="password" placeholder="Password"></ion-input>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+</ion-content>
